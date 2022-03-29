@@ -1,9 +1,4 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    color:black;
-}
+*{margin:0;padding:0;box-sizing:border-box;color:black;}
 
 :root{
     --azulReOscuro:#174F5C;
@@ -16,3 +11,31 @@
 html{
     background-color: var(--fullAzul);
 }
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.bodyContainer{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+aside{
+    width: 100px;
+}
+.bar{
+    width: 80px;
+    background-color: var(--azulReOscuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.barButton__img{
+    width: 40px;
+    height: 100%;
+}
+
