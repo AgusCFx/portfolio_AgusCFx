@@ -110,15 +110,18 @@ aside{
 
 /* Secciones en Main */
 .sectionPage{
-    margin: 30px auto;
+    margin: 30px;
     margin-bottom: 60px;
+}
+.sectionPage__title{
+    margin: 15px 0;
 }
 
 /* Home */
 .homeSection{
     height: 625px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
     /* Home Foto Perfil */
@@ -134,7 +137,7 @@ aside{
 }
     /* Home Informacion del Home */
 .homeSection__firstInfoContainer{
-    width: 550px;
+    width: 600px;
     height: inherit;
     display: flex;
     justify-content: space-around;
@@ -175,7 +178,6 @@ aside{
 /* Tecnologias */
 .techSection__techContainer{
     height: 450px;
-    padding: 1px;
     border-radius: var(--radMed);
     box-shadow: var(--shadowHig);
     display: flex;
@@ -193,6 +195,64 @@ aside{
 }
 .tech__img{
     width: 90px;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+/* Proyectos */
+.projectSection__projectContainer{
+    padding: 30px;
+    border-radius: var(--radMed);
+    box-shadow: var(--shadowHig);
+}
+    /* Proyecto individual dentro de la seccion Proyectos */
+.projectContainer__projectBox{
+    margin: 30px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+        /* Project Info */
+.projectBox__projectInfo{
+    width: 50%;
+    padding: 15px;
+}
+.projectInfo__projectTitle{
+    margin: 20px 0;
+}
+.projectInfo__projectDetail{
+    padding-left: 20px;
+}
+        /* Project View */
+.projectBox__projectView{
+    width: 50%;
+}
+.projectView__preview{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.projectView__preview img{
+    height: inherit;
+    object-fit: cover;
+    border-radius: var(--radHig);
+    box-shadow: var(--shadowMed);
+}
+.projectView__projectViewButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+}
+.projectViewButtons__button{
+    width: 50%;
+    height: 50px;
+    border-radius: var(--radHig);
+    box-shadow: var(--shadowMed);
+}
+.projectViewButtons__button img{
+    width: 40px;
     height: 100%;
     margin: 0 auto;
     object-fit: contain;
