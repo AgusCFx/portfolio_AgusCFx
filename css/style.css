@@ -92,7 +92,6 @@ aside{
     justify-content: center;
     flex-direction: column;
 }
-
 .firstInfoContainer__title{
     display: flex;
     justify-content: flex-start;
