@@ -56,7 +56,7 @@ p{
     font-size: 1.5rem;
     font-family: RenogareSoft;
 }
-img{
+img, svg{
     display: block;
     width: 100%;
 }
@@ -172,4 +172,28 @@ aside{
     text-align: right;
 }
 
-
+/* Tecnologias */
+.techSection__techContainer{
+    height: 450px;
+    padding: 1px;
+    border-radius: var(--radMed);
+    box-shadow: var(--shadowHig);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.techContainer__tech{
+    margin: 25px 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: var(--radHig);
+    box-shadow: var(--shadowMed);
+}
+.tech__img{
+    width: 90px;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+}
