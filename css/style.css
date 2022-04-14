@@ -6,6 +6,7 @@
     --cyanWay:#7CCFE1;
     --fullAzul: #37BDDB;
     --grisSombra:#4C595C;
+    --luz:rgba(255, 255, 255, 0.25);
 }
 
 html{
@@ -15,7 +16,13 @@ body{
     margin: 0 auto;
     max-width: 1200px;
 }
-
+h1{
+    font-size: 2.5rem;
+}
+img{
+    display: block;
+    width: 100%;
+}
 .bodyContainer{
     display:flex;
     justify-content: center;
@@ -26,16 +33,72 @@ aside{
     width: 100px;
 }
 .bar{
-    width: 80px;
-    background-color: var(--azulReOscuro);
+    margin: 30px auto;
+    width: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
+    border-radius: 45px;
+    box-shadow: -18px -18px 30px var(--luz), 18px 18px 30px var(--grisSombra);
 }
-
+.bar__navbar{
+    background: linear-gradient(145deg, #195562, #154753);
+}
+.bar__contactBar{
+    background: linear-gradient(145deg, #2d9bb4, #268397);
+}
+.barBotton{
+    margin: 20px auto;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(145deg, #3bdfea, #32bbc5);
+    border-radius: 50%;
+    box-shadow: -5px -5px 5px var(--luz), 5px 5px 5px #4C595C;
+}
 .barButton__img{
-    width: 40px;
+    margin: 0 auto;
+    width: 30px;
     height: 100%;
 }
 
+.sectionPage{
+
+}
+
+/* Home */
+.homeSection{
+    background-color: red;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    /* Home Foto Perfil */
+.homeSection__imgProfileContainer{
+    width: 400px;
+    height: inherit;
+}
+.homeSection__imgProfileContainer__img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+    /* Home Informacion del Home */
+.homeSection__firstInfoContainer{
+    width: 500px;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.firstInfoContainer__title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
+    width: 400px;
+    height: 140px;
+    background-color: green;
+}

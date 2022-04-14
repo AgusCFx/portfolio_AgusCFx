@@ -4,76 +4,90 @@
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='css/style.css'>
     <title>Portfolio AgusCFx</title>
 </head>
 <body>
     <div class='bodyContainer'>
+        <!-- Navbar de 2 secciones -->
         <header>
             <aside class='barContainer'>
+                <!-- Navbar Principal -->
                 <navbar class='bar bar__navbar'>
                     <a href='#homeSection' class='barBotton'><img src='img/bar/casa.svg' class='barButton__img'></a>
                     <a href='#techSection' class='barBotton'><img src='img/bar/tech.svg' class='barButton__img'></a>
                     <a href='#projectSection' class='barBotton'><img src='img/bar/maletin.svg' class='barButton__img'></a>
                     <a href='#contactSection' class='barBotton'><img src='img/bar/sobre.svg' class='barButton__img'></a>
                 </navbar>
+                <!-- Navbar inferior para "otros" -->
                 <div class='bar bar__contactBar'>
                     <a href='https://github.com/AgusCFx' class='barBotton' target='_blank'><img src='img/bar/github.svg' alt='' class='barButton__img'></a>
                     <a href='https://www.linkedin.com/in/agustin-fernandez-84a044101/' class='barBotton' target='_blank'><img src='img/bar/linkedin.svg' alt='' class='barButton__img'></a>
                 </div>
             </aside>
         </header>
+        <!-- Secciones de la pagina -->
         <main>
+            <!-- Home -->
             <section class='sectionPage homeSection' id='homeSection'>
+                <!-- Foto Perfil -->
                 <div class='homeSection__imgProfileContainer'>
                     <img src='img/profile_img.jpg' alt='Imagen de perfil de Agustin Fernandez' class='homeSection__imgProfileContainer__img'>
                 </div>
+                <!-- Informacion del Home -->
                 <div class='homeSection__firstInfoContainer'>
-                    <h1 class='firstInfoContainer__title'>WEB DEVELOPER</h1>
-                    <p class='firstInfoContainer__name'>AGUSTIN FERNANDEZ</p>
-                    <h3 class='firstInfoContainer__title2'>ESTUDIANTE FULL-STACK</h3>
+                    <h1 class='firstInfoContainer__title'>WEB<br />DEVELOPER</h1>
+                    <div class="firstInfoContainer__subtitle">
+                        <p class='firstInfoContainer__name'>AGUSTIN FERNANDEZ</p>
+                        <h3 class='firstInfoContainer__title2'>ESTUDIANTE FULL-STACK</h3>
+                    </div>
                 </div>
             </section>
+
+            <!-- Tecnologias -->
             <section class='sectionPage techSection' id='techSection'>
-                <h2 class="sectionPage__title">TECNOLOGIAS</h2>
-                <div class="techSection__techContainer">
-                    <div class="techContainer__tech"><img src="img/tech_icons/html.svg" class="tech__img"></div>
-                    <div class="techContainer__tech"><img src="img/tech_icons/css.svg" class="tech__img"></div>
-                    <div class="techContainer__tech"><img src="img/tech_icons/sass.svg" class="tech__img"></div>
-                    <div class="techContainer__tech"><img src="img/tech_icons/javascript.svg" class="tech__img"></div>
-                    <div class="techContainer__tech"><img src="img/tech_icons/react.svg" class="tech__img"></div>
-                    <div class="techContainer__tech"><img src="img/tech_icons/git.svg" class="tech__img"></div>
+                <h2 class='sectionPage__title'>TECNOLOGIAS</h2>
+                <div class='techSection__techContainer'>
+                    <div class='techContainer__tech'><img src='img/tech_icons/html.svg' class='tech__img'></div>
+                    <div class='techContainer__tech'><img src='img/tech_icons/css.svg' class='tech__img'></div>
+                    <div class='techContainer__tech'><img src='img/tech_icons/sass.svg' class='tech__img'></div>
+                    <div class='techContainer__tech'><img src='img/tech_icons/javascript.svg' class='tech__img'></div>
+                    <div class='techContainer__tech'><img src='img/tech_icons/react.svg' class='tech__img'></div>
+                    <div class='techContainer__tech'><img src='img/tech_icons/git.svg' class='tech__img'></div>
                 </div>
             </section>
+            
+            <!-- Proyectos -->
             <section class='sectionPage projectSection' id='projectSection'>
-                <h2 class="sectionPage__title">PROYECTOS</h2>
-                <div class="projectSection__projectContainer">
-                    <div class="projectContainer__projectBox">
-                        <h3 class="projectBox__projectTitle">Out_Galaxy</h3>
-                        <p class="projectBox__projectInfo">E-commerse de empresa mecanica galactica
+                <h2 class='sectionPage__title'>PROYECTOS</h2>
+                <div class='projectSection__projectContainer'>
+                    <div class='projectContainer__projectBox'>
+                        <h3 class='projectBox__projectTitle'>Out_Galaxy</h3>
+                        <p class='projectBox__projectInfo'>E-commerse de empresa mecanica galactica
                             basado en un futuro distopico.</p>
-                        <div class="projectBox__projectView"><img src="img/project/project_outGalaxy.png" alt="" class="projectView__img"><a href="https://github.com/AgusCFx/Out_Galaxy" class="projectView__gitHub"><img src="img/bar/github.svg" alt=""></a><a href="https://aguscfx.github.io/Out_Galaxy/" class="projectView__newTab"><img src="img/bar/new-tab.svg" alt=""></a></div>
+                        <div class='projectBox__projectView'><img src='img/project/project_outGalaxy.png' alt='' class='projectView__img'><a href='https://github.com/AgusCFx/Out_Galaxy' class='projectView__gitHub'><img src='img/bar/github.svg' alt=''></a><a href='https://aguscfx.github.io/Out_Galaxy/' class='projectView__newTab'><img src='img/bar/new-tab.svg' alt=''></a></div>
                     </div>
-                    <div class="projectContainer__projectBox">
-                        <h3 class="projectBox__projectTitle"></h3>
-                        <p class="projectBox__projectInfo"></p>
-                        <div class="projectBox__projectView"><img src="" alt="" class="projectView__img"><a href="" class="projectView__gitHub"></a><a href="" class="projectView__newTab"></a></div>
+                    <div class='projectContainer__projectBox'>
+                        <h3 class='projectBox__projectTitle'></h3>
+                        <p class='projectBox__projectInfo'></p>
+                        <div class='projectBox__projectView'><img src='' alt='' class='projectView__img'><a href='' class='projectView__gitHub'></a><a href='' class='projectView__newTab'></a></div>
                     </div>
-                    <div class="projectContainer__projectBox">
-                        <h3 class="projectBox__projectTitle"></h3>
-                        <p class="projectBox__projectInfo"></p>
-                        <div class="projectBox__projectView"><img src="" alt="" class="projectView__img"><a href="" class="projectView__gitHub"></a><a href="" class="projectView__newTab"></a></div>
+                    <div class='projectContainer__projectBox'>
+                        <h3 class='projectBox__projectTitle'></h3>
+                        <p class='projectBox__projectInfo'></p>
+                        <div class='projectBox__projectView'><img src='' alt='' class='projectView__img'><a href='' class='projectView__gitHub'></a><a href='' class='projectView__newTab'></a></div>
                     </div>
-                    <div class="projectContainer__projectBox">
-                        <h3 class="projectBox__projectTitle"></h3>
-                        <p class="projectBox__projectInfo"></p>
-                        <div class="projectBox__projectView"><img src="" alt="" class="projectView__img"><a href="" class="projectView__gitHub"></a><a href="" class="projectView__newTab"></a></div>
+                    <div class='projectContainer__projectBox'>
+                        <h3 class='projectBox__projectTitle'></h3>
+                        <p class='projectBox__projectInfo'></p>
+                        <div class='projectBox__projectView'><img src='' alt='' class='projectView__img'><a href='' class='projectView__gitHub'></a><a href='' class='projectView__newTab'></a></div>
                     </div>
                 </div>
             </section>
         </main>
     </div>
-    <footer id="contactSection">
+    <!-- Pie de pagina -->
+    <footer id='contactSection'>
 
     </footer>
 </body>
