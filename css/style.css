@@ -20,15 +20,19 @@
 
     /* inclinacion linear gradient Neomorfosmo */
     --lg: 145deg;
+
+    /* background general neomorfismo */
+    --bgNeoOut: linear-gradient(var(--lg),#3bcaea, #32aac5);
+    --bgNeoIn: linear-gradient(var(--lg), #32aac5, #3bcaea);
 }
 /* Fuentes */
 @font-face{
     font-family: 'RenogareSoft';
-    src: url(/sources/fonts/RenogareSoft-Regular.ttf);
+    src: url(../sources/fonts/RenogareSoft-Regular.ttf);
 }
 @font-face{
     font-family: 'Track';
-    src: url(/sources/fonts/Track.ttf)
+    src: url(../sources/fonts/Track.ttf)
 }
 
 /* Seteo principal */
@@ -42,19 +46,19 @@ body{
 }
 h1{
     font-size: 3rem;
-    font-family: Track;
+    font-family: 'Track';
 }
 h2{
     font-size: 2.5rem;
-    font-family: Track;
+    font-family: 'Track';
 }
 h3{
     font-size: 2rem;
-    font-family: RenogareSoft;
+    font-family: 'RenogareSoft';
 }
 p{
     font-size: 1.5rem;
-    font-family: RenogareSoft;
+    font-family: 'RenogareSoft';
 }
 img, svg{
     display: block;
@@ -143,6 +147,7 @@ aside{
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    background: var(--bgNeoIn);
     border-radius: var(--radMed);
     box-shadow: var(--shadowHig);
 }
@@ -153,6 +158,7 @@ aside{
     padding-left: 50px;
     width: 450px;
     height: 180px;
+    background: var(--bgNeoOut);
     border-radius: var(--radHig);
     box-shadow: var(--shadowHig);
 }
@@ -182,6 +188,7 @@ aside{
     box-shadow: var(--shadowHig);
     display: flex;
     flex-flow: row wrap;
+    background: var(--bgNeoIn);
     justify-content: center;
     align-items: center;
     
@@ -190,6 +197,7 @@ aside{
     margin: 25px 50px;
     width: 150px;
     height: 150px;
+    background: var(--bgNeoOut);
     border-radius: var(--radHig);
     box-shadow: var(--shadowMed);
 }
@@ -203,6 +211,7 @@ aside{
 /* Proyectos */
 .projectSection__projectContainer{
     padding: 30px;
+    background: var(--bgNeoIn);
     border-radius: var(--radMed);
     box-shadow: var(--shadowHig);
 }
@@ -242,12 +251,13 @@ aside{
 .projectView__projectViewButtons{
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
 }
 .projectViewButtons__button{
-    width: 50%;
+    width: 47.5%;
     height: 50px;
+    background: var(--bgNeoOut);
     border-radius: var(--radHig);
     box-shadow: var(--shadowMed);
 }
