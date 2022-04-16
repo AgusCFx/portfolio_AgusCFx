@@ -310,5 +310,12 @@ footer{
 }
 .contactSites__contactSitesBox img{
     height: 100px;
+}
 
+/* Efectos de botones */
+.buttonEffects:hover{
+    background: var(--fullAzul);
+}
+.buttonEffects:active{
+    background: var(--bgNeoIn);
 }
