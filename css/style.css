@@ -330,11 +330,6 @@ footer{
     h4{font-size: 3.5vw;}
     p{font-size: 3vw;}
 
-    /* debug media */
-    html{
-        background-color: red;
-    }
-
     /* ocultar Navbar */
     header{
         display: none;
@@ -349,7 +344,6 @@ footer{
         width: 40%;
         height: 260px;
         margin:20px;
-        /* bottom: 20%; */
     }
     .homeSection__imgProfileContainer__img{
         width: 100%;
