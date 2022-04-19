@@ -39,6 +39,7 @@
 html{
     background-color: var(--fullAzul);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     margin: 0 auto;
@@ -129,15 +130,14 @@ aside{
 
 /* Home */
 .homeSection{
-    height: 625px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
     /* Home Foto Perfil */
 .homeSection__imgProfileContainer{
-    width: 400px;
-    height: inherit;   
+    max-width: 500px;
+    height: 525px;   
 }
 .homeSection__imgProfileContainer__img{
     height: inherit;
@@ -147,8 +147,9 @@ aside{
 }
     /* Home Informacion del Home */
 .homeSection__firstInfoContainer{
-    width: 600px;
-    height: inherit;
+    width: 100%;
+    height: 525px;
+    margin-left: 40px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -162,7 +163,7 @@ aside{
     justify-content: flex-start;
     align-items: center;
     padding-left: 50px;
-    width: 450px;
+    width: 80%;
     height: 180px;
     background: var(--bgNeoOut);
     border-radius: var(--radHig);
@@ -189,7 +190,6 @@ aside{
 
 /* Tecnologias */
 .techSection__techContainer{
-    height: 450px;
     border-radius: var(--radMed);
     box-shadow: var(--shadowHig);
     display: flex;
@@ -287,6 +287,7 @@ footer{
     box-shadow: var(--shadowHig);
 }
 .contactSection__info{
+    padding: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -318,4 +319,91 @@ footer{
 }
 .buttonEffects:active{
     background: var(--bgNeoIn);
+}
+
+@media screen and (max-width: 1200px), (max-height: 670px) {
+
+    /* text responsive */
+    h1{font-size: 5vw;}
+    h2{font-size: 4.5vw;}
+    h3{font-size: 4vw;}
+    h4{font-size: 3.5vw;}
+    p{font-size: 3vw;}
+
+    /* debug media */
+    html{
+        background-color: red;
+    }
+
+    /* ocultar Navbar */
+    header{
+        display: none;
+    }
+
+    /* Home Section responsive */
+    .homeSection{
+        align-items: flex-end;
+    }
+    .homeSection__imgProfileContainer{
+        position: absolute;
+        width: 40%;
+        height: 260px;
+        margin:20px;
+        /* bottom: 20%; */
+    }
+    .homeSection__imgProfileContainer__img{
+        width: 100%;
+        height: 100%;
+        object-position: center 30%;
+    }
+    .homeSection__firstInfoContainer{
+        margin:0;
+        width: 100%;
+    }
+    .firstInfoContainer__subtitle{
+        width: 50%;
+        margin-left:auto;
+        padding: 0 10% 0 0;
+    }
+    .firstInfoContainer__name{
+        text-align: right;
+        white-space: normal;
+    }
+
+    /* proyect Section responsive */
+    .projectSection__projectContainer{
+        padding: 10px;
+    }
+    .projectContainer__projectBox{
+        flex-direction: column;
+        align-items: center;
+    }
+    .projectBox__projectInfo{
+        width: 100%;
+        padding: 0;
+    }
+    .projectInfo__projectTitle{
+        text-align: center;
+    }
+    .projectInfo__projectDetail{
+        padding: 0;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .projectBox__projectView{
+        width: 100%;
+    }
+
+    /* footer */
+    .contactSection__contactSites{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:570px){
+    /* techSection responsive */
+    .techContainer__tech{
+        width: 40%;
+        margin: 5%;
+    }
 }
