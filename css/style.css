@@ -267,6 +267,9 @@ aside{
     border-radius: var(--radHig);
     box-shadow: var(--shadowMed);
 }
+.projectViewButtons__button-disabled{
+    background: grey;
+}
 .projectViewButtons__button img{
     width: 40px;
     height: 100%;
